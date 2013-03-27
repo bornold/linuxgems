@@ -304,6 +304,9 @@ wget -b wget -c http://example.com/folder/file
 # download a file from ftp server:
 wget --ftp-user=USER --ftp-password=PASS ftp://example.com/folder/file
 
+# download all files of type FILETYPE from folder over http:
+wget -r -l1 --no-parent -A.FILETYPE http://example.com/folder/
+
 ***** netcat:
 
 # Listen for input from network on recieving_port, dump it to a file (insecure, but handy):
